@@ -12,14 +12,14 @@ export default function Home() {
         <link rel="icon" href="/favicon-ii.png" />
       </Head>
 
-      <main className=" bg-[#FAFAFA] text-[#292B30]">
+      <main className="flex flex-col w-full bg-[#FAFAFA] text-[#191d2a] overflow-x-hidden">
         {/* //Hero */}
         <section className=" w-full flex justify-center items-center">
           <img
             src="/hero.jpg"
             className="flex h-screen w-full object-fill items-center md:hidden"
           />
-          <div className="absolute md:relative md:h-screen md:items-center left-20 md:flex md:flex-col md:justify-center  md:left-auto md:w-full md:m-auto">
+          <div className="absolute md:relative md:h-screen md:items-center left-20 md:flex md:flex-col md:justify-center md:ml-0  md:left-0 md:w-full md:m-auto">
             <img src="/logo.svg" className="h-10 mb-10" />
             <h1 className="font-extrabold text-[50px] w-9/12 md:text-base lg:text-lg md:text-center md:w-11/12">
               Location Based AR Marketing Platform
@@ -36,10 +36,10 @@ export default function Home() {
         </section>
 
         {/* //CTA */}
-        <section className="flex justify-center items-center bg-gradient-to-r from-[#9000FF] to-[#00FBFF] py-10">
+        <section className="flex justify-center items-center bg-gradient-to-r from-[#9000FF] to-[#00FBFF] py-10 lg:w-full lg:m-auto">
           <div className="flex flex-row items-center justify-center w-full m-auto mx-auto md:flex-col ">
             <div className="flex w-full ">
-              <h1 className="w-10/12 flex justify-end md:justify-center text-white font-extrabold text-[30px] lg:text-sm mr-10 md:mx-auto md:mb-4">
+              <h1 className="w-10/12 text-center flex justify-end md:justify-center text-white font-extrabold text-[30px] lg:text-sm mr-10 md:mx-auto md:mb-4">
                 Sign up for Early Access
               </h1>
             </div>

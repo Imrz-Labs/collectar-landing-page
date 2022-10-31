@@ -5,15 +5,7 @@
 @import url("https://use.typekit.net/wvk6guc.css");
 
 @layer base {
-  html {
-    @apply imrz-text-black dark:bg-black;
-    overflow-x: hidden;
-    cursor: context-menu;
-    font-family: Poppins, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    background: #fff !important;
-  }
+
 
   body {
     @apply imrz-bg-slate text-black;
