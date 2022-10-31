@@ -16,7 +16,7 @@ export default function Home() {
         {/* //Hero */}
         <section className=" w-full flex justify-center items-center">
           <img
-            src="/background.png"
+            src="/hero.jpg"
             className="flex h-screen w-full object-fill items-center md:hidden"
           />
           <div className="absolute md:relative md:h-screen md:items-center left-20 md:flex md:flex-col md:justify-center  md:left-auto md:w-full md:m-auto">
