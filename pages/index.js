@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         <section className=" w-full flex justify-center items-center">
           <img
             src="/hero.jpg"
-            className="flex h-screen w-full object-fill items-center md:hidden"
+            className="flex h-screen w-full object-cover items-center md:hidden "
           />
           <div className="absolute md:relative md:h-screen md:items-center left-20 md:flex md:flex-col md:justify-center md:ml-0  md:left-0 md:w-full md:m-auto">
             <img src="/logo.svg" className="h-10 mb-10" />
@@ -67,10 +67,52 @@ export default function Home() {
         </section>
 
         {/* //Features Images */}
-        <section className="w-full justify-center items-center py-10 mx-10 grid grid-cols-3 sm:grid-cols-1">
-          <img src="/1.png" className="object-scale-down" />
-          <img src="/2.png" className="object-scale-down" />
-          <img src="/3.png" className="object-scale-down" />
+        <section className="w-full justify-center items-center py-20 grid grid-cols-3 sm:grid-cols-1">
+          <div className="flex flex-col justify-center items-center">
+            <div className="h-[250px] w-[250px] bg-white-500">
+              <img
+                src="/1.png"
+                className="object-scale-down relative h-[200px] w-[200px] m-auto top-12"
+              />
+            </div>
+            <h1 className="font-bold text-sm text-center  mt-4">
+              Discover & Collect
+            </h1>
+            <p className="text-center w-8/12 lg:md:w-full md:w-6/12 sm:w-11/12 mt-2">
+              Discover and find Collectibles around you.
+            </p>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <div className="h-[250px] w-[250px] bg-white-500">
+              <img
+                src="/2.png"
+                className="object-scale-down relative h-[200px] w-[250px] m-auto top-12"
+              />
+            </div>
+            <h1 className="font-bold text-sm text-center mt-4">
+              Collectibles Unlock Rewards
+            </h1>
+            <p className="text-center w-8/12 lg:md:w-full md:w-6/12 sm:w-11/12 mt-2">
+              The more you collect, the more rewards you will receive.
+            </p>
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <div className="h-[250px] w-[250px] bg-white-500 mb-6">
+              <img
+                src="/3.png"
+                className="object-scale-down relative h-[180px] w-[200px] m-auto top-24"
+              />
+            </div>
+            <h1 className="font-bold text-sm text-center mt-4">
+              Upcoming Collectibles
+            </h1>
+            <p className="text-center w-8/12 lg:md:w-full md:w-6/12 sm:w-11/12 mt-2">
+              View upcoming collectibles in launchpad to claim them before they
+              are gone!
+            </p>
+          </div>
+
+ 
         </section>
 
         {/* //Footer CTA */}
@@ -157,5 +199,5 @@ export default function Home() {
         </section>
       </main>
     </>
-  )
+  );
 }
